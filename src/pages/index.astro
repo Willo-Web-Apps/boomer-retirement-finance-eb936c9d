@@ -1,35 +1,369 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Your New Business" description="Personal finance business for baby boomers looking to retire soon">
-  <!-- Hero — the Product Agent will replace this entire page -->
-  <section class="relative min-h-[80vh] flex items-center overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 via-surface-50 to-brand-500/10"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
-      <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-surface-900 font-display max-w-4xl mx-auto leading-[1.1] animate-slide-up">
-        Your New Business
-      </h1>
-      <p class="mt-6 text-lg md:text-xl text-surface-800/60 max-w-2xl mx-auto leading-relaxed animate-slide-up delay-100">
-        Personal finance business for baby boomers looking to retire soon
-      </p>
-      <div class="mt-10 animate-slide-up delay-200">
-        <a href="#cta" class="inline-block px-8 py-3.5 bg-brand-500 text-white font-semibold rounded-lg hover:bg-brand-600 transition-colors text-base">
-          Get Started
-        </a>
+<Base
+  title="NestEgg Guide — Retire with confidence, not confusion"
+  description="Plain-language retirement guidance for baby boomers within 1–10 years of retirement. Social Security timing, Medicare enrollment, 401(k) withdrawals, and tax planning — in language you can actually use."
+>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section class="relative min-h-[88vh] flex items-center overflow-hidden">
+    <!-- Layered gradient background -->
+    <div class="absolute inset-0" style="
+      background:
+        radial-gradient(ellipse at 15% 60%, oklch(0.39 0.11 155 / 0.10), transparent 55%),
+        radial-gradient(ellipse at 85% 15%, oklch(0.67 0.16 65 / 0.08), transparent 50%),
+        radial-gradient(ellipse at 60% 90%, oklch(0.39 0.11 155 / 0.06), transparent 45%),
+        linear-gradient(to bottom, oklch(0.978 0.008 80), oklch(0.955 0.012 80));
+    "></div>
+
+    <!-- Decorative leaf / organic shape -->
+    <div class="absolute right-0 top-0 w-1/2 h-full pointer-events-none hidden lg:block overflow-hidden">
+      <svg viewBox="0 0 600 700" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-[-80px] top-[-40px] w-[580px] opacity-[0.07]">
+        <path d="M580 350C580 540 450 680 300 680C150 680 20 540 20 350C20 160 150 20 300 20C450 20 580 160 580 350Z" fill="oklch(0.39 0.11 155)"/>
+        <path d="M300 680 L300 20" stroke="oklch(0.39 0.11 155)" stroke-width="2"/>
+        <path d="M300 680 Q420 500 520 300 Q420 150 300 20" stroke="oklch(0.39 0.11 155)" stroke-width="1.5" fill="none"/>
+        <path d="M300 680 Q180 500 80 300 Q180 150 300 20" stroke="oklch(0.39 0.11 155)" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
+      <div class="max-w-3xl">
+        <!-- Eyebrow -->
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 mb-8 animate-slide-up">
+          <span class="w-2 h-2 rounded-full bg-accent-500 inline-block"></span>
+          <span class="text-sm font-medium text-brand-600">Built for boomers retiring in 1–10 years</span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-surface-900 font-display leading-[1.08] animate-slide-up delay-100">
+          Your Retirement Roadmap,<br/>
+          <em class="not-italic" style="color: oklch(0.39 0.11 155);">Finally</em> in Plain Language
+        </h1>
+
+        <p class="mt-6 text-lg md:text-xl text-surface-800/70 max-w-2xl leading-relaxed animate-slide-up delay-200">
+          From Social Security timing to Medicare enrollment, get clear actionable guidance built specifically for boomers retiring soon.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 items-start animate-slide-up delay-300">
+          <a
+            href="#get-started"
+            class="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white text-base transition-colors duration-150"
+            style="background: oklch(0.67 0.16 65); hover: oklch(0.57 0.16 65);"
+            onmouseover="this.style.background='oklch(0.57 0.16 65)'"
+            onmouseout="this.style.background='oklch(0.67 0.16 65)'"
+          >
+            Get my free retirement checklist
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+              <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+          <a
+            href="#how-it-works"
+            class="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-surface-900 text-base border border-surface-200 hover:border-brand-400 hover:text-brand-600 transition-colors duration-150 bg-white/70 backdrop-blur-sm"
+          >
+            See how it works
+          </a>
+        </div>
+
+        <!-- Micro-proof -->
+        <p class="mt-5 text-sm text-surface-800/50 animate-slide-up delay-400">
+          No signup required. No advisor to sell you anything. Just plain answers.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="cta" class="py-20 md:py-28">
+
+  <!-- ═══════════════════════════════════════════════
+       SOCIAL PROOF BAR
+  ═══════════════════════════════════════════════ -->
+  <section class="py-12 border-y border-surface-200" style="background: oklch(0.955 0.012 80);">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-brand-500 p-10 md:p-16 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white font-display">Ready to get started?</h2>
-        <p class="mt-4 text-lg text-white/80 max-w-xl mx-auto">Get in touch and see what we can do for you.</p>
-        <a href="mailto:hello@example.com" class="mt-8 inline-block px-8 py-3.5 bg-white text-surface-900 font-semibold rounded-lg hover:bg-surface-100 transition-colors text-base">
-          Contact Us
-        </a>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="animate-slide-up delay-100">
+          <p class="text-3xl md:text-4xl font-bold font-display text-surface-900">73M</p>
+          <p class="mt-1 text-sm text-surface-800/60 leading-snug">Baby boomers now<br/>approaching retirement</p>
+        </div>
+        <div class="animate-slide-up delay-200">
+          <p class="text-3xl md:text-4xl font-bold font-display text-surface-900">$280K</p>
+          <p class="mt-1 text-sm text-surface-800/60 leading-snug">Average retirement savings<br/>gap for U.S. boomers</p>
+        </div>
+        <div class="animate-slide-up delay-300">
+          <p class="text-3xl md:text-4xl font-bold font-display text-surface-900">6 in 10</p>
+          <p class="mt-1 text-sm text-surface-800/60 leading-snug">Retirees wish they'd<br/>planned Social Security sooner</p>
+        </div>
+        <div class="animate-slide-up delay-400">
+          <p class="text-3xl md:text-4xl font-bold font-display text-surface-900">4 hrs</p>
+          <p class="mt-1 text-sm text-surface-800/60 leading-snug">Average time saved per<br/>topic with our guides</p>
+        </div>
       </div>
     </div>
   </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       FEATURES GRID — What We Cover
+  ═══════════════════════════════════════════════ -->
+  <section id="topics" class="py-20 md:py-28 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display animate-slide-up">
+          The four retirement questions<br/>that cost people the most money
+        </h2>
+        <p class="mt-4 text-lg text-surface-800/60 leading-relaxed animate-slide-up delay-100">
+          Every topic is written specifically for people in your situation — no generic advice, no jargon walls.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+
+        <!-- Card 1: Social Security -->
+        <div class="group rounded-2xl border border-surface-200 bg-white/60 p-8 hover:border-brand-400/50 hover:shadow-lg transition-all duration-200 animate-slide-up delay-100">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: oklch(0.92 0.04 155);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="oklch(0.39 0.11 155)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <rect x="2" y="5" width="20" height="14" rx="2"/>
+              <path d="M2 10h20"/>
+              <path d="M6 15h2M10 15h4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold font-display text-surface-900 mb-2">Social Security Timing</h3>
+          <p class="text-surface-800/65 leading-relaxed">
+            Claiming at 62 vs. 67 vs. 70 can change your lifetime income by over $200,000. We break down exactly when to file — including spousal strategies most advisors never mention.
+          </p>
+          <p class="mt-4 text-sm font-semibold text-brand-600">Social Security timing →</p>
+        </div>
+
+        <!-- Card 2: Medicare -->
+        <div class="group rounded-2xl border border-surface-200 bg-white/60 p-8 hover:border-brand-400/50 hover:shadow-lg transition-all duration-200 animate-slide-up delay-200">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: oklch(0.92 0.04 155);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="oklch(0.39 0.11 155)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold font-display text-surface-900 mb-2">Medicare Enrollment</h3>
+          <p class="text-surface-800/65 leading-relaxed">
+            Miss a Medicare deadline and you could pay penalty surcharges for life. We walk you through Part A, Part B, Medigap, and Part D enrollment windows — in plain English, step by step.
+          </p>
+          <p class="mt-4 text-sm font-semibold text-brand-600">Medicare enrollment guide →</p>
+        </div>
+
+        <!-- Card 3: 401k Withdrawals -->
+        <div class="group rounded-2xl border border-surface-200 bg-white/60 p-8 hover:border-brand-400/50 hover:shadow-lg transition-all duration-200 animate-slide-up delay-300">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: oklch(0.92 0.04 155);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="oklch(0.39 0.11 155)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold font-display text-surface-900 mb-2">401(k) & IRA Withdrawals</h3>
+          <p class="text-surface-800/65 leading-relaxed">
+            The order you pull from your accounts — taxable, tax-deferred, Roth — can save tens of thousands in taxes over retirement. We show you practical withdrawal strategies designed around your income range.
+          </p>
+          <p class="mt-4 text-sm font-semibold text-brand-600">Retirement income planning →</p>
+        </div>
+
+        <!-- Card 4: Tax Planning -->
+        <div class="group rounded-2xl border border-surface-200 bg-white/60 p-8 hover:border-brand-400/50 hover:shadow-lg transition-all duration-200 animate-slide-up delay-400">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: oklch(0.92 0.04 155);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="oklch(0.39 0.11 155)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <path d="M9 14l-4-4 4-4"/>
+              <path d="M5 10h11a4 4 0 0 1 0 8h-1"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold font-display text-surface-900 mb-2">Tax Planning in Retirement</h3>
+          <p class="text-surface-800/65 leading-relaxed">
+            Roth conversions, IRMAA brackets, required minimum distributions — retirement taxes are complicated. We translate the rules into clear choices so you can keep more of what you saved.
+          </p>
+          <p class="mt-4 text-sm font-semibold text-brand-600">Near-retiree finance →</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════════════════ -->
+  <section id="how-it-works" class="py-20 md:py-28 lg:py-32" style="background: oklch(0.955 0.012 80);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display animate-slide-up">
+          From confused to confident<br/>in three steps
+        </h2>
+        <p class="mt-4 text-lg text-surface-800/60 leading-relaxed animate-slide-up delay-100">
+          No app to download. No account to create. Just honest, practical retirement guidance you can act on today.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-12 relative">
+        <!-- Connector line (desktop only) -->
+        <div class="hidden md:block absolute top-7 left-[calc(16.66%+1.5rem)] right-[calc(16.66%+1.5rem)] h-px bg-surface-200 z-0"></div>
+
+        <!-- Step 1 -->
+        <div class="relative z-10 flex flex-col items-start md:items-center md:text-center animate-slide-up delay-100">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold font-display text-xl mb-5 shadow-md" style="background: oklch(0.67 0.16 65);">1</div>
+          <h3 class="text-lg font-bold font-display text-surface-900 mb-2">Pick your biggest question</h3>
+          <p class="text-surface-800/65 leading-relaxed">
+            Whether it's "When should I claim Social Security?" or "How do I enroll in Medicare?" — choose the topic that's keeping you up at night.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative z-10 flex flex-col items-start md:items-center md:text-center animate-slide-up delay-200">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold font-display text-xl mb-5 shadow-md" style="background: oklch(0.67 0.16 65);">2</div>
+          <h3 class="text-lg font-bold font-display text-surface-900 mb-2">Read the plain-language guide</h3>
+          <p class="text-surface-800/65 leading-relaxed">
+            Every guide is written for someone in your exact situation — not a 30-year-old, not a millionaire. No jargon. No dense charts. Real answers for real boomers.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative z-10 flex flex-col items-start md:items-center md:text-center animate-slide-up delay-300">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold font-display text-xl mb-5 shadow-md" style="background: oklch(0.67 0.16 65);">3</div>
+          <h3 class="text-lg font-bold font-display text-surface-900 mb-2">Make your decision with confidence</h3>
+          <p class="text-surface-800/65 leading-relaxed">
+            Walk away knowing the right move for your situation — and the deadline to make it. Use our retirement checklist to track every step.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       TRUST / ABOUT SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="py-20 md:py-28 lg:py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+        <!-- Text side -->
+        <div class="animate-slide-up">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display leading-tight mb-6">
+            We talk to you like a<br/>
+            <em class="not-italic" style="color: oklch(0.39 0.11 155);">trusted friend</em> who knows finance
+          </h2>
+          <p class="text-lg text-surface-800/65 leading-relaxed mb-5">
+            Most retirement websites are either too complicated (built for CFPs, not retirees) or too vague (written by people who've never worried about outliving their savings).
+          </p>
+          <p class="text-lg text-surface-800/65 leading-relaxed mb-8">
+            NestEgg Guide exists for one reason: to give people ages 58–70 the specific, objective, easy-to-understand guidance they deserve — without a commission-hungry advisor in the room.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background: oklch(0.92 0.04 155);">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="oklch(0.39 0.11 155)" class="w-3 h-3">
+                  <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+              <span class="text-surface-800/75 leading-relaxed">Written for household incomes of $60K–$200K — the middle where most boomers actually live</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background: oklch(0.92 0.04 155);">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="oklch(0.39 0.11 155)" class="w-3 h-3">
+                  <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+              <span class="text-surface-800/75 leading-relaxed">No product recommendations, no affiliate links, no upsells</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background: oklch(0.92 0.04 155);">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="oklch(0.39 0.11 155)" class="w-3 h-3">
+                  <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+              <span class="text-surface-800/75 leading-relaxed">Always objective — because your best retirement is our only goal</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Visual side — decorative card stack -->
+        <div class="relative animate-slide-up delay-200 hidden lg:block">
+          <div class="absolute -top-6 -left-6 w-full h-full rounded-3xl border border-brand-200/60" style="background: oklch(0.97 0.018 155 / 0.4);"></div>
+          <div class="relative rounded-3xl border border-surface-200 bg-white p-8 shadow-xl">
+            <p class="text-sm font-semibold text-accent-600 uppercase tracking-widest mb-3">Retirement Checklist</p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3 p-3 rounded-xl" style="background: oklch(0.97 0.018 155 / 0.5);">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background: oklch(0.39 0.11 155);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white" class="w-3.5 h-3.5">
+                    <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"/>
+                  </svg>
+                </span>
+                <span class="text-surface-900 font-medium">Confirm full retirement age (FRA)</span>
+              </li>
+              <li class="flex items-center gap-3 p-3 rounded-xl" style="background: oklch(0.97 0.018 155 / 0.5);">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background: oklch(0.39 0.11 155);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white" class="w-3.5 h-3.5">
+                    <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"/>
+                  </svg>
+                </span>
+                <span class="text-surface-900 font-medium">Review Medicare Part B enrollment window</span>
+              </li>
+              <li class="flex items-center gap-3 p-3 rounded-xl bg-surface-100">
+                <span class="w-6 h-6 rounded-full border-2 border-surface-300 flex-shrink-0"></span>
+                <span class="text-surface-800/70 font-medium">Set up my Social Security account at ssa.gov</span>
+              </li>
+              <li class="flex items-center gap-3 p-3 rounded-xl bg-surface-100">
+                <span class="w-6 h-6 rounded-full border-2 border-surface-300 flex-shrink-0"></span>
+                <span class="text-surface-800/70 font-medium">Check my projected RMD amounts</span>
+              </li>
+              <li class="flex items-center gap-3 p-3 rounded-xl bg-surface-100">
+                <span class="w-6 h-6 rounded-full border-2 border-surface-300 flex-shrink-0"></span>
+                <span class="text-surface-800/70 font-medium">Run a Roth conversion analysis</span>
+              </li>
+            </ul>
+            <a href="#get-started" class="mt-6 block text-center text-sm font-semibold text-brand-600 hover:text-brand-500 transition-colors">
+              Download the full checklist →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       FINAL CTA
+  ═══════════════════════════════════════════════ -->
+  <section id="get-started" class="py-20 md:py-28 relative overflow-hidden">
+    <!-- Rich layered gradient — forest green anchored -->
+    <div class="absolute inset-0" style="
+      background:
+        radial-gradient(ellipse at 10% 80%, oklch(0.67 0.16 65 / 0.15), transparent 50%),
+        radial-gradient(ellipse at 90% 20%, oklch(0.67 0.16 65 / 0.10), transparent 40%),
+        linear-gradient(135deg, oklch(0.31 0.10 155), oklch(0.39 0.11 155) 60%, oklch(0.35 0.11 155));
+    "></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight font-display leading-tight animate-slide-up" style="color: oklch(0.978 0.008 80);">
+        Stop guessing. Start retiring<br/>with a plan that's actually yours.
+      </h2>
+      <p class="mt-5 text-lg leading-relaxed animate-slide-up delay-100" style="color: oklch(0.978 0.008 80 / 0.75);">
+        Get the free NestEgg Retirement Checklist — 27 specific actions, organized by the year before you retire. No email required to start.
+      </p>
+
+      <div class="mt-10 animate-slide-up delay-200">
+        <a
+          href="mailto:hello@nestegguide.com"
+          class="inline-flex items-center gap-2 px-10 py-4 rounded-xl font-bold text-surface-900 text-base transition-colors duration-150 shadow-lg"
+          style="background: oklch(0.67 0.16 65);"
+          onmouseover="this.style.background='oklch(0.76 0.13 65)'"
+          onmouseout="this.style.background='oklch(0.67 0.16 65)'"
+        >
+          Get my free retirement checklist
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+        <p class="mt-4 text-sm animate-slide-up delay-300" style="color: oklch(0.978 0.008 80 / 0.55);">
+          No advisor to call back. No account to create. Just answers.
+        </p>
+      </div>
+    </div>
+  </section>
+
 </Base>

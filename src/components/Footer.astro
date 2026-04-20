@@ -1,11 +1,54 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
+<footer class="border-t border-surface-200 py-12 mt-auto" style="background: oklch(0.955 0.012 80);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Your New Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Your New Business. All rights reserved.</p>
+    <div class="grid md:grid-cols-3 gap-8 mb-10">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2.5 mb-3">
+          <span class="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0" style="background: oklch(0.39 0.11 155);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+              <path d="M12 2C6.5 2 2 6 2 11c0 3.9 2.5 7.3 6 8.8V21h8v-1.2c3.5-1.5 6-4.9 6-8.8 0-5-4.5-9-10-9z"/>
+              <path d="M9 21v1h6v-1"/>
+            </svg>
+          </span>
+          <span class="font-bold font-display text-surface-900">NestEgg Guide</span>
+        </div>
+        <p class="text-sm text-surface-800/60 leading-relaxed max-w-xs">
+          Plain-language retirement guidance for baby boomers within 1–10 years of retirement. No jargon, no upsells.
+        </p>
+      </div>
+
+      <!-- Topics -->
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-surface-800/50 mb-4">Topics</p>
+        <ul class="space-y-2.5">
+          <li><a href="#topics" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors">Social Security Timing</a></li>
+          <li><a href="#topics" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors">Medicare Enrollment</a></li>
+          <li><a href="#topics" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors">401(k) & IRA Withdrawals</a></li>
+          <li><a href="#topics" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors">Retirement Tax Planning</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-surface-800/50 mb-4">Resources</p>
+        <ul class="space-y-2.5">
+          <li><a href="#get-started" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors">Free Retirement Checklist</a></li>
+          <li><a href="/blog" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors">Guides & Articles</a></li>
+          <li><a href="mailto:hello@nestegguide.com" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pt-8 border-t border-surface-200 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+      <p class="text-xs text-surface-800/45">&copy; {year} NestEgg Guide. All rights reserved.</p>
+      <p class="text-xs text-surface-800/40 max-w-md leading-relaxed">
+        NestEgg Guide provides educational information only — not personalized financial, tax, or legal advice. Always consult a qualified professional for decisions specific to your situation.
+      </p>
     </div>
   </div>
 </footer>
